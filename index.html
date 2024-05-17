@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Clock App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+
+  <body class="background background--day">
+    <main class="main">
+      <section class="quote-container">
+        <div class="quote">
+          <p class="quote__text"></p>
+          <p class="quote__author"></p>
+        </div>
+        <button class="quote-refresh" type="button">
+          <img src="./assets/desktop/icon-refresh.svg" alt="refresh icon" />
+        </button>
+      </section>
+
+      <section class="hero">
+        <div class="clock-container">
+          <p class="clock-greeting">
+            <img
+              class="clock-greeting__icon"
+              src="./assets/desktop/icon-sun.svg"
+              alt="sun icon"
+            />
+            <span class="clock-greeting__text">Good Morning</span>
+            <span class="clock-greeting__text--extra">, it's currently</span>
+          </p>
+          <p class="clock-time">
+            <span class="clock-time__time">
+              <span class="clock-time__hour">99</span>:<span
+                class="clock-time__mins"
+                >99</span
+              >
+            </span>
+            <span class="clock-time__abbrev">BST</span>
+          </p>
+          <p class="clock-location">
+            in
+            <span class="clock-location__location">
+              <span class="clock-location__city">London</span>,
+              <span class="clock-location__country">UK</span>
+            </span>
+          </p>
+        </div>
+
+        <div class="expander">
+          <button class="expander__btn" type="button">
+            <img
+              class="expander__icon"
+              src="assets/desktop/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <span class="expander__text">MORE</span>
+        </div>
+      </section>
+    </main>
+
+    <section class="additional-info-container">
+      <p class="additional-info">
+        <span class="additional-info__label">Current timezone</span>
+        <span class="additional-info__value additional-info__timezone"
+          >Europe/London</span
+        >
+      </p>
+      <p class="additional-info">
+        <span class="additional-info__label">Day of the year</span>
+        <span class="additional-info__value additional-info__day-of-year"
+          >295</span
+        >
+      </p>
+      <p class="additional-info">
+        <span class="additional-info__label">Day of the week</span>
+        <span class="additional-info__value additional-info__day-of-week"
+          >5</span
+        >
+      </p>
+      <p class="additional-info">
+        <span class="additional-info__label">Week number</span>
+        <span class="additional-info__value additional-info__week-number"
+          >42</span
+        >
+      </p>
+    </section>
+  </body>
+</html>
